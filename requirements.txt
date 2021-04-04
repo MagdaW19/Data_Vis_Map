@@ -1,0 +1,42 @@
+alabaster==0.7.12
+Babel @ file:///tmp/build/80754af9/babel_1607110387436/work
+brotlipy==0.7.0
+certifi==2020.12.5
+cffi @ file:///C:/ci/cffi_1613247308275/work
+chardet @ file:///C:/ci/chardet_1607706910910/work
+colorama @ file:///tmp/build/80754af9/colorama_1607707115595/work
+cryptography @ file:///C:/ci/cryptography_1616769432139/work
+Cython==0.29.21
+-e git+https://github.com/MagdaW19/Data_Vis_Map.git@d885d4afd9c42eb68c2401727f6a8d8665040ef9#egg=data_vis
+docutils==0.16
+idna @ file:///home/linux1/recipes/ci/idna_1610986105248/work
+imagesize @ file:///home/ktietz/src/ci/imagesize_1611921604382/work
+Jinja2 @ file:///tmp/build/80754af9/jinja2_1612213139570/work
+Keras==2.4.3
+keras-resnet==0.2.0
+keras-retinanet @ file:///C:/Users/magda/Desktop/sem_7/DYPLOM/keras-retinanet
+MarkupSafe @ file:///C:/ci/markupsafe_1594405949945/work
+opencv-python==4.4.0.46
+packaging @ file:///tmp/build/80754af9/packaging_1611952188834/work
+progressbar2==3.53.1
+pycparser @ file:///tmp/build/80754af9/pycparser_1594388511720/work
+Pygments @ file:///tmp/build/80754af9/pygments_1615143339740/work
+pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1608057966937/work
+pyparsing @ file:///home/linux1/recipes/ci/pyparsing_1610983426697/work
+PySocks @ file:///C:/ci/pysocks_1594394709107/work
+python-utils==2.4.0
+pytz @ file:///tmp/build/80754af9/pytz_1612215392582/work
+PyYAML==5.3.1
+requests @ file:///tmp/build/80754af9/requests_1608241421344/work
+six @ file:///C:/ci/six_1605205426665/work
+snowballstemmer @ file:///tmp/build/80754af9/snowballstemmer_1611258885636/work
+Sphinx @ file:///tmp/build/80754af9/sphinx_1616268783226/work
+sphinxcontrib-applehelp @ file:///home/ktietz/src/ci/sphinxcontrib-applehelp_1611920841464/work
+sphinxcontrib-devhelp @ file:///home/ktietz/src/ci/sphinxcontrib-devhelp_1611920923094/work
+sphinxcontrib-htmlhelp @ file:///home/ktietz/src/ci/sphinxcontrib-htmlhelp_1611920974801/work
+sphinxcontrib-jsmath @ file:///home/ktietz/src/ci/sphinxcontrib-jsmath_1611920942228/work
+sphinxcontrib-qthelp @ file:///home/ktietz/src/ci/sphinxcontrib-qthelp_1611921055322/work
+sphinxcontrib-serializinghtml @ file:///home/ktietz/src/ci/sphinxcontrib-serializinghtml_1611920755253/work
+urllib3 @ file:///tmp/build/80754af9/urllib3_1615837158687/work
+win-inet-pton @ file:///C:/ci/win_inet_pton_1605306165655/work
+wincertstore==0.2
