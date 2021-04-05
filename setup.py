@@ -5,5 +5,5 @@ setup(
     version='1.0.0',
     packages=find_packages(include=['data_vis', 'data_vis.*']),
     author='Magda Wójcicka',
-    install_requires=['folium']
+    install_requires=['folium==0.12.1']
 )
