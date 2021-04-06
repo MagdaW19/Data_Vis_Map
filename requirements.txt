@@ -14,11 +14,12 @@ chardet @ file:///C:/ci/chardet_1607706910910/work
 colorama @ file:///tmp/build/80754af9/colorama_1607707115595/work
 cryptography @ file:///C:/ci/cryptography_1616769432139/work
 Cython==0.29.21
+-e git+https://github.com/MagdaW19/Data_Vis_Map.git@32ce92ac3a5417cf49bc9607582c46f47be3c138#egg=data_vis
 decorator @ file:///tmp/build/80754af9/decorator_1617389979178/work
 defusedxml @ file:///tmp/build/80754af9/defusedxml_1615228127516/work
 docutils==0.16
 entrypoints==0.3
-folium @ file:///home/conda/feedstock_root/build_artifacts/folium_1615570722684/work
+folium==0.12.1
 idna @ file:///home/linux1/recipes/ci/idna_1610986105248/work
 imagesize @ file:///home/ktietz/src/ci/imagesize_1611921604382/work
 importlib-metadata @ file:///C:/ci/importlib-metadata_1615900693889/work
@@ -47,6 +48,7 @@ notebook @ file:///C:/ci/notebook_1616443616158/work
 numpy @ file:///C:/ci/numpy_and_numpy_base_1603468620949/work
 opencv-python==4.4.0.46
 packaging @ file:///tmp/build/80754af9/packaging_1611952188834/work
+pandas @ file:///C:/ci/pandas_1614711338358/work
 pandocfilters @ file:///C:/ci/pandocfilters_1605102427207/work
 parso @ file:///tmp/build/80754af9/parso_1617223946239/work
 pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work

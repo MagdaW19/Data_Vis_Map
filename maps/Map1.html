@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b9716d90318843749fd7b0f17d32c843 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b9716d90318843749fd7b0f17d32c843" ></div>
+        
+</body>
+<script>    
+    
+            var map_b9716d90318843749fd7b0f17d32c843 = L.map(
+                "map_b9716d90318843749fd7b0f17d32c843",
+                {
+                    center: [44.4197998, -121.7710037],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c8c862e86e484325857b58e521af09da = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b9716d90318843749fd7b0f17d32c843);
+        
+    
+            var feature_group_6c59010443054c409ecdb88213ab3694 = L.featureGroup(
+                {}
+            ).addTo(map_b9716d90318843749fd7b0f17d32c843);
+        
+    
+            var marker_94d8603dea694c87983759159355ee6a = L.marker(
+                [48.7767982, -121.810997],
+                {}
+            ).addTo(feature_group_6c59010443054c409ecdb88213ab3694);
+        
+    
+            var icon_98478ed1783a489c90de9dc7af9f9206 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-circle", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_94d8603dea694c87983759159355ee6a.setIcon(icon_98478ed1783a489c90de9dc7af9f9206);
+        
+    
+        var popup_15aa890e5a9749d8b9f8dd16c8880879 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b4c1beccdb0a483681abd4f78497d5bd = $(`<div id="html_b4c1beccdb0a483681abd4f78497d5bd" style="width: 100.0%; height: 100.0%;">Name:Baker Location:US-Washington</div>`)[0];
+            popup_15aa890e5a9749d8b9f8dd16c8880879.setContent(html_b4c1beccdb0a483681abd4f78497d5bd);
+        
+
+        marker_94d8603dea694c87983759159355ee6a.bindPopup(popup_15aa890e5a9749d8b9f8dd16c8880879)
+        ;
+
+        
+    
+    
+            var marker_753582d584e04e719602cc08fdc55089 = L.marker(
+                [48.1118011, -121.1110001],
+                {}
+            ).addTo(feature_group_6c59010443054c409ecdb88213ab3694);
+        
+    
+            var icon_9a2ef692298847eba6096dc70790ce2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-circle", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_753582d584e04e719602cc08fdc55089.setIcon(icon_9a2ef692298847eba6096dc70790ce2e);
+        
+    
+        var popup_6bd01dbe16d343e7bc27e930e35f5bd0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_14c5e7ca22a741a9aee0528e21d5afa6 = $(`<div id="html_14c5e7ca22a741a9aee0528e21d5afa6" style="width: 100.0%; height: 100.0%;">Name:Glacier Peak Location:US-Washington</div>`)[0];
+            popup_6bd01dbe16d343e7bc27e930e35f5bd0.setContent(html_14c5e7ca22a741a9aee0528e21d5afa6);
+        
+
+        marker_753582d584e04e719602cc08fdc55089.bindPopup(popup_6bd01dbe16d343e7bc27e930e35f5bd0)
+        ;
+
+        
+    
+    
+            var marker_e0ddee62d9c749fe8a4eb1f9285fc26f = L.marker(
+                [46.8698006, -121.7509995],
+                {}
+            ).addTo(feature_group_6c59010443054c409ecdb88213ab3694);
+        
+    
+            var icon_3369ad4f0c94401baa43b9d91a22e0cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-circle", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_e0ddee62d9c749fe8a4eb1f9285fc26f.setIcon(icon_3369ad4f0c94401baa43b9d91a22e0cc);
+        
+    
+        var popup_a033e023e6064c1f8a535fb9cec59a9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_16caa46121114f43a6ca68b455a4add7 = $(`<div id="html_16caa46121114f43a6ca68b455a4add7" style="width: 100.0%; height: 100.0%;">Name:Rainier Location:US-Washington</div>`)[0];
+            popup_a033e023e6064c1f8a535fb9cec59a9c.setContent(html_16caa46121114f43a6ca68b455a4add7);
+        
+
+        marker_e0ddee62d9c749fe8a4eb1f9285fc26f.bindPopup(popup_a033e023e6064c1f8a535fb9cec59a9c)
+        ;
+
+        
+    
+    
+            var marker_409f450bac53422fb7e272ace4076a38 = L.marker(
+                [46.1997986, -122.1809998],
+                {}
+            ).addTo(feature_group_6c59010443054c409ecdb88213ab3694);
+        
+    
+            var icon_f9a47fc5f0aa40129a08b31ceb35426f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-circle", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_409f450bac53422fb7e272ace4076a38.setIcon(icon_f9a47fc5f0aa40129a08b31ceb35426f);
+        
+    
+        var popup_646df1955d3246ab8acb4d5aa74300ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4c027eff9474da58243c1ae49c2df6c = $(`<div id="html_e4c027eff9474da58243c1ae49c2df6c" style="width: 100.0%; height: 100.0%;">Name:St. Helens Location:US-Washington</div>`)[0];
+            popup_646df1955d3246ab8acb4d5aa74300ef.setContent(html_e4c027eff9474da58243c1ae49c2df6c);
+        
+
+        marker_409f450bac53422fb7e272ace4076a38.bindPopup(popup_646df1955d3246ab8acb4d5aa74300ef)
+        ;
+
+        
+    
+    
+            var marker_90637656d6384b74801eea8f57b64cf2 = L.marker(
+                [46.2057991, -121.4909973],
+                {}
+            ).addTo(feature_group_6c59010443054c409ecdb88213ab3694);
+        
+    
+            var icon_9348ba647a92418d94cba8c082e64a45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-circle", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_90637656d6384b74801eea8f57b64cf2.setIcon(icon_9348ba647a92418d94cba8c082e64a45);
+        
+    
+        var popup_36f2a79bd7054d69b34e04449cd58732 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_960649772d9f419792a85071beacd501 = $(`<div id="html_960649772d9f419792a85071beacd501" style="width: 100.0%; height: 100.0%;">Name:Adams Location:US-Washington</div>`)[0];
+            popup_36f2a79bd7054d69b34e04449cd58732.setContent(html_960649772d9f419792a85071beacd501);
+        
+
+        marker_90637656d6384b74801eea8f57b64cf2.bindPopup(popup_36f2a79bd7054d69b34e04449cd58732)
+        ;
+
+        
+    
+    
+            var marker_c4ab62dcd632416180ed6a1e88f681db = L.marker(
+                [45.8797989, -122.0810013],
+                {}
+            ).addTo(feature_group_6c59010443054c409ecdb88213ab3694);
+        
+    
+            var icon_faaccbd42ab14c65b9576e452baab444 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-circle", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_c4ab62dcd632416180ed6a1e88f681db.setIcon(icon_faaccbd42ab14c65b9576e452baab444);
+        
+    
+        var popup_4f2801f1f9e64f6a801a7dca48ab34f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c0567842f2c496cb2e87a4eebdd1744 = $(`<div id="html_7c0567842f2c496cb2e87a4eebdd1744" style="width: 100.0%; height: 100.0%;">Name:West Crater Location:US-Washington</div>`)[0];
+            popup_4f2801f1f9e64f6a801a7dca48ab34f0.setContent(html_7c0567842f2c496cb2e87a4eebdd1744);
+        
+
+        marker_c4ab62dcd632416180ed6a1e88f681db.bindPopup(popup_4f2801f1f9e64f6a801a7dca48ab34f0)
+        ;
+
+        
+    
+    
+            var marker_487ab004ac574f0989d3bb94898a4911 = L.marker(
+                [45.9297981, -121.8209991],
+                {}
+            ).addTo(feature_group_6c59010443054c409ecdb88213ab3694);
+        
+    
+            var icon_4a7eaab8ff964789bdd717e5e4b0b69e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-circle", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_487ab004ac574f0989d3bb94898a4911.setIcon(icon_4a7eaab8ff964789bdd717e5e4b0b69e);
+        
+    
+        var popup_e3facff81a5d43d9bd2dba132a315bcd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_846328ae76b9476f953cb6bfef69a58a = $(`<div id="html_846328ae76b9476f953cb6bfef69a58a" style="width: 100.0%; height: 100.0%;">Name:Indian Heaven Location:US-Washington</div>`)[0];
+            popup_e3facff81a5d43d9bd2dba132a315bcd.setContent(html_846328ae76b9476f953cb6bfef69a58a);
+        
+
+        marker_487ab004ac574f0989d3bb94898a4911.bindPopup(popup_e3facff81a5d43d9bd2dba132a315bcd)
+        ;
+
+        
+    
+    
+            var marker_c4d005f1255b448bad6ec244ce75e239 = L.marker(
+                [45.3737984, -121.6910019],
+                {}
+            ).addTo(feature_group_6c59010443054c409ecdb88213ab3694);
+        
+    
+            var icon_1a160607d0ca4f2d836d4db62ec863f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-circle", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_c4d005f1255b448bad6ec244ce75e239.setIcon(icon_1a160607d0ca4f2d836d4db62ec863f1);
+        
+    
+        var popup_439e1dcefeaa4a0baa1bcd31ca2342a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4736b313aee4aa89e270e75098949b1 = $(`<div id="html_c4736b313aee4aa89e270e75098949b1" style="width: 100.0%; height: 100.0%;">Name:Hood Location:US-Oregon</div>`)[0];
+            popup_439e1dcefeaa4a0baa1bcd31ca2342a0.setContent(html_c4736b313aee4aa89e270e75098949b1);
+        
+
+        marker_c4d005f1255b448bad6ec244ce75e239.bindPopup(popup_439e1dcefeaa4a0baa1bcd31ca2342a0)
+        ;
+
+        
+    
+    
+            var marker_1b2539d809054dd9b38acedadbf43aca = L.marker(
+                [44.6917992, -121.8010025],
+                {}
+            ).addTo(feature_group_6c59010443054c409ecdb88213ab3694);
+        
+    
+            var icon_9d0658b9a5b1486f8384cd4f443b5c4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-circle", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_1b2539d809054dd9b38acedadbf43aca.setIcon(icon_9d0658b9a5b1486f8384cd4f443b5c4b);
+        
+    
+        var popup_c30ff6e2d746453cb33c0699567d5eca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_572528f39f2b47fe9c31c24a761895e3 = $(`<div id="html_572528f39f2b47fe9c31c24a761895e3" style="width: 100.0%; height: 100.0%;">Name:Jefferson Location:US-Oregon</div>`)[0];
+            popup_c30ff6e2d746453cb33c0699567d5eca.setContent(html_572528f39f2b47fe9c31c24a761895e3);
+        
+
+        marker_1b2539d809054dd9b38acedadbf43aca.bindPopup(popup_c30ff6e2d746453cb33c0699567d5eca)
+        ;
+
+        
+    
+    
+            var marker_84893714f14e4d68af5b3a60ef02cf7d = L.marker(
+                [44.4197998, -121.7710037],
+                {}
+            ).addTo(feature_group_6c59010443054c409ecdb88213ab3694);
+        
+    
+            var icon_74c1000212d346b2bed7815a9753b62c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-circle", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_84893714f14e4d68af5b3a60ef02cf7d.setIcon(icon_74c1000212d346b2bed7815a9753b62c);
+        
+    
+        var popup_abec7dd1ec89401a9f3d115aa71a4b93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e976e2925664770ad199c34033d87b8 = $(`<div id="html_5e976e2925664770ad199c34033d87b8" style="width: 100.0%; height: 100.0%;">Name:Blue Lake Crater Location:US-Oregon</div>`)[0];
+            popup_abec7dd1ec89401a9f3d115aa71a4b93.setContent(html_5e976e2925664770ad199c34033d87b8);
+        
+
+        marker_84893714f14e4d68af5b3a60ef02cf7d.bindPopup(popup_abec7dd1ec89401a9f3d115aa71a4b93)
+        ;
+
+        
+    
+</script>
