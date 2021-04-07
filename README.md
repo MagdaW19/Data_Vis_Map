@@ -1,2 +1,2 @@
 # Data_Vis_Map
-Data Visualization - Map of Earthquakes and Volcanos
+Data Visualization - Generate Maps of Tsunamis, Earthquakes and Volcanos

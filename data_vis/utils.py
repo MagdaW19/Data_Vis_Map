@@ -14,17 +14,53 @@
 
 "Module with utility functions for generating maps with volcanoes, earthquakes and tsunamis."
 
+import pandas as pd
+
 # Dictionary for translating last eruption date
-errupt_date_dict = {
-    'D1':	'Last known eruption 1964 or later',
-    'D2':	'Last known eruption 1900-1963',
-    'D3':	'Last known eruption 1800-1899',
-    'D4':	'Last known eruption 1700-1799',
-    'D5':	'Last known eruption 1500-1699',
-    'D6':	'Last known eruption A.D. 1-1499',
-    'D7':	'Last known eruption B.C. (Holocene)',
+errupt_dict = {
+    'D1':	'LAST KNOWN ERRUPTION: 1964 or later',
+    'D2':	'LAST KNOWN ERRUPTION: 1900-1963',
+    'D3':	'LAST KNOWN ERRUPTION: 1800-1899',
+    'D4':	'LAST KNOWN ERRUPTION: 1700-1799',
+    'D5':	'LAST KNOWN ERRUPTION: 1500-1699',
+    'D6':	'LAST KNOWN ERRUPTION: A.D. 1-1499',
+    'D7':	'LAST KNOWN ERRUPTION: B.C. (Holocene)',
     'U':	'Undated, but probable Holocene eruption',
-    'Q':	'Quaternary eruption(s) with the only known Holocene activity being hydrothermal'
+    'Q':	'Quaternary eruption(s) with the only known Holocene activity being hydrothermal',
     '?':	'Uncertain Holocene eruption'
 }
 
+def vol_color(errupt_date):
+    """Returns string representing color of the volcano marker based on last erruption date.
+
+
+    Parameters
+    ----------
+    errupt_date : str
+        Describes last erruption date according to data format.
+        One of the following 'D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'U', 'Q', '?'
+
+    Returns
+    -------
+    str
+        string representing color
+    """
+    if errupt_date == 'D1':
+        return 'red'
+    elif errupt_date in ['D2', 'D3', 'D4', 'D5']:
+        return 'orange'
+    else:
+        return 'green'
+
+def load_data(path):
+    """Load data saved via API and filter instances without lat and lon.
+
+    Parameters
+    ----------
+    path : str
+        Path to the csv file with data
+    """
+    data = pd.read_csv(path)
+    data = data.dropna(subset=['latitude','longitude'])
+    #data = data.to_dict('list')
+    return data
