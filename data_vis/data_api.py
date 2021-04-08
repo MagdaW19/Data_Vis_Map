@@ -63,6 +63,5 @@ def download_data(urls, fps):
 
 download_data(urls, fps)
 
-if __name__ == '__main__':
-    unittest.main()
+
 
