@@ -14,15 +14,23 @@
 
 "Module for testing utility functions of create_map module."
 import unittest
-from context import utils
+from data_vis import utils
 import pandas as pd
 
 class TestUtils(unittest.TestCase):
     def test_load_data(self):
-        path = 'data/volloc.csv'
+        path = 'tests/data_t/volloc.csv'
         data = pd.read_csv(path)
         data = data.dropna(subset=['latitude','longitude'])
-        self.assertEqual(data, utils.load_data(path))
+        data.equals(utils.load_data(path))
+
+    def test_vol_color(self):
+        self.assertEqual(utils.vol_color('D1'), 'red')
+        self.assertEqual(utils.vol_color('D2'), 'orange')
+        self.assertEqual(utils.vol_color('U'), 'green')
+        
+
+
 
 if __name__ == '__main__':
     unittest.main()
