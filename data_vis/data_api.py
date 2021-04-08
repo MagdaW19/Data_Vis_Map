@@ -37,17 +37,32 @@ url_tsunamis = 'https://www.ngdc.noaa.gov/hazel/hazard-service/api/v1/tsunamis/e
 urls = [url_volloc, url_earthquakes, url_tsunamis]
 
 # filepaths to save the data
-fp_volloc = 'data/volloc.csv'
-fp_earthquakes = 'data/earthquakes.csv'
-fp_tsunamis = 'data/tsunamis.csv'
+fp_volloc = '../data/volloc.csv'
+fp_earthquakes = '../data/earthquakes.csv'
+fp_tsunamis = '../data/tsunamis.csv'
 
 fps = [fp_volloc, fp_earthquakes, fp_tsunamis]
 
-# Downloading data via API and saving as csv
-for url, fp in zip(urls, fps):
-    data = requests.get(url=url)
-    data_dict = data.json()['items']
-    pd.DataFrame(data_dict).to_csv(fp, index=False)
+def download_data(urls, fps):
+    """Function that downloads data from API url and saves it to csv files
 
-print('Succesfully downloaded data using API (https://www.ngdc.noaa.gov/) and saved in folder data')
+    Parameters
+    ----------
+    urls : obj::list of obj::str
+        list of urls for API
+    fps : obj::list of obj::str
+        List of file_paths to save csv files with data
+    """
+# Downloading data via API and saving as csv
+    for url, fp in zip(urls, fps):
+        data = requests.get(url=url)
+        data_dict = data.json()['items']
+        pd.DataFrame(data_dict).to_csv(fp, index=False)
+
+    print('Succesfully downloaded data using API (https://www.ngdc.noaa.gov/) and saved in folder data')
+
+download_data(urls, fps)
+
+if __name__ == '__main__':
+    unittest.main()
 
