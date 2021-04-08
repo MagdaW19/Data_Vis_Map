@@ -24,8 +24,9 @@ from data_vis.utils import load_data, vol_color, errupt_dict
 
 
 def add_volcanoes(path):
-    """Functions creating folium.FeatureGroup using path to file with data
-        about volcanoes.
+    """
+    Functions creating folium.FeatureGroup using path to file with data
+    about volcanoes.
 
     Parameters
     ----------
@@ -64,10 +65,11 @@ def add_volcanoes(path):
     return fvol
 
 def add_events(path, name='Tsunamis', check=True, color='darkblue'):
-    """Functions creating folium.FeatureGroup using path to file with data
-        about natural disasters. By default events are filtered and only 
-        the most significant ones are shown (associated with at least one human 
-        death).
+    """
+    Functions creating folium.FeatureGroup using path to file with data
+    about natural disasters. By default events are filtered and only 
+    the most significant ones are shown (associated with at least one human 
+    death).
 
     Parameters
     ----------
@@ -123,8 +125,9 @@ def add_events(path, name='Tsunamis', check=True, color='darkblue'):
 
 def create_map(loc=[52.2, 21.0], tiles = "Stamen Terrain", check=True,
               zoom_start=6, save_path='maps/Map1.html', data_dir='data'):
-    """Functions that creates map with markers for volcanoes, earthquakes and tsunamis.
-        Map is saved as html file and can be used as part of the website
+    """
+    Functions that creates map with markers for volcanoes, earthquakes and tsunamis.
+    Map is saved as html file and can be used as part of the website
 
     Parameters
     ----------

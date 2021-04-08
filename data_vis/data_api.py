@@ -11,8 +11,9 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-"""Script that downloads data regarding volcanoes, earthquakes and tsunamis using API.
+"""
+Script that downloads data regarding volcanoes, earthquakes and tsunamis using API and saves it 
+in folder data as csv files.
 
 Source: https://www.ngdc.noaa.gov/
 NCEI Volcano Location Database. NOAA National Centers for Environmental Information.
