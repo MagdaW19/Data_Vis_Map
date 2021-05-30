@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/MagdaW19/Data_Vis_Map.svg?branch=master)](https://travis-ci.com/MagdaW19/Data_Vis_Map)
+
 # Data_Vis_Map
 Data Visualization - Generate Maps of Tsunamis, Earthquakes and Volcanos
 
