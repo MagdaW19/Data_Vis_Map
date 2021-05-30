@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/MagdaW19/Data_Vis_Map.svg?branch=master)](https://travis-ci.com/MagdaW19/Data_Vis_Map)
+[![codecov](https://codecov.io/gh/MagdaW19/Data_Vis_Map/branch/master/graph/badge.svg?token=0YRFF9W0QU)](https://codecov.io/gh/MagdaW19/Data_Vis_Map)
 
 # Data_Vis_Map
 Data Visualization - Generate Maps of Tsunamis, Earthquakes and Volcanos
